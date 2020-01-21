@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AppleShotting : Shotting
+public class AppleShooting : Shooting
 {
-    [SerializeField] private int cound;
+    private int seedCound=6;
     private bool speedup;
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
-        StartCoroutine(Shotting(timeBetweenBullets));
+        //StartCoroutine(Shotting(timeBetweenBullets));
         
     }
 
@@ -26,42 +26,41 @@ public class AppleShotting : Shotting
             if (distance < range && !speedup)
             {
                 speedup = true;
-                StopAllCoroutines();
-                StartCoroutine(Shotting(timeBetweenBullets));
+                StartCoroutine(Shooting(timeBetweenBullets));
             }
         }else{
             enemy=gameObject.GetComponent<Move>().tempTarget;
+            _shooting = false;
         }
         
     }
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         var temp = other.gameObject.GetComponent<Health>();
         if (temp && temp.type == "Vegetable")
         {
             enemy = other.gameObject;
-            _shotting = true;
+            _shooting = true;
         }
     }
-
     private void OnTriggerExit(Collider other)
     {
         var temp = other.gameObject.GetComponent<Health>();
         if (temp && temp.type == "Vegetable")
         {
-            _shotting = false;
+            _shooting = false;
             speedup = false;
         }
     }
 
-    IEnumerator Shotting(float time)
+    IEnumerator Shooting(float time)
     {
-        GameObject []temp=new GameObject[cound];
-        while (true)
+        GameObject []temp=new GameObject[seedCound];
+        while (_shooting)
         {
             yield return new WaitForSeconds(time);
-            for(int i = 0; i < cound; i++)
+            for(int i = 0; i < seedCound; i++)
             {
                 float angle = transform.eulerAngles.y + (transform.rotation.y + 5f * i) / 2;
                 bulletCom.type = type;
@@ -76,6 +75,7 @@ public class AppleShotting : Shotting
                 temp[i].GetComponent<Rigidbody>().velocity = (temp[i].transform.forward * 10f);
                 temp[i].transform.rotation=Quaternion.Euler(0, 0, 0);
             }
+
         }
     }
 

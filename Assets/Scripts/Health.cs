@@ -9,7 +9,7 @@ public class Health : MonoBehaviour
     private Animator anim;
     private MeshRenderer mesh;
     // Start is called before the first frame update
-    void Start()
+    protected virtual void Start()
     {
         anim = gameObject.GetComponent<Animator>();
         mesh = gameObject.GetComponent<MeshRenderer>();

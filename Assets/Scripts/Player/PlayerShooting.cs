@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class PlayerShooting : Shotting
+public class PlayerShooting : Shooting
 {
     public int damagePerShot = 20;
     private float timer;
@@ -69,7 +69,7 @@ public class PlayerShooting : Shotting
         bulletCom.type = type;
         bulletCom.attack = attack;
         GameObject temp = Instantiate(bullet, transform.position, new Quaternion(0f,0f,0f,0f));
-        temp.GetComponent<Rigidbody>().AddForce(transform.forward * 1000 * speed);
+        temp.GetComponent<Rigidbody>().velocity = (point.transform.forward * 10f* speed);
 
         //gunLine.SetPosition(1, shootRay.origin + shootRay.direction * range);
     }

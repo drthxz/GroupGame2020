@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BroccoliShotting : Shotting
+public class BroccoliShooting : Shooting
 {
     // Start is called before the first frame update
     protected override void Start()
@@ -16,13 +16,13 @@ public class BroccoliShotting : Shotting
         base.Update();
     }
     
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         var temp = other.gameObject.GetComponent<Health>();
         if (temp && temp.type == "Fruit")
         {
             enemy = other.gameObject;
-            _shotting = true;
+            _shooting = true;
             StartCoroutine(Shotting(timeBetweenBullets));
         }
     }
@@ -32,7 +32,7 @@ public class BroccoliShotting : Shotting
         var temp = other.gameObject.GetComponent<Health>();
         if (temp && temp.type == "Fruit")
         {
-            _shotting = false;
+            _shooting = false;
             StopCoroutine(Shotting(timeBetweenBullets));
         }
     }
@@ -40,7 +40,7 @@ public class BroccoliShotting : Shotting
     IEnumerator Shotting(float time)
     {
 
-        while (_shotting)
+        while (_shooting)
         {
             yield return new WaitForSeconds(time);
             bulletCom.type = type;

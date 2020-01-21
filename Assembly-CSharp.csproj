@@ -65,15 +65,15 @@
     <Compile Include="Assets\Scripts\Bullet.cs" />
     <Compile Include="Assets\Scripts\CameraControl.cs" />
     <Compile Include="Assets\Scripts\Fruit\Move\AppleMove.cs" />
-    <Compile Include="Assets\Scripts\Fruit\Shotting\AppleShotting.cs" />
-    <Compile Include="Assets\Scripts\Fruit\Shotting\Shotting.cs" />
+    <Compile Include="Assets\Scripts\Fruit\Shotting\AppleShooting.cs" />
+    <Compile Include="Assets\Scripts\Fruit\Shotting\Shooting.cs" />
     <Compile Include="Assets\Scripts\Health.cs" />
     <Compile Include="Assets\Scripts\Move.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
     <Compile Include="Assets\Scripts\Vegetable\Move\BroccoliMove.cs" />
-    <Compile Include="Assets\Scripts\Vegetable\Shotting\BroccoliShotting.cs" />
+    <Compile Include="Assets\Scripts\Vegetable\Shotting\BroccoliShooting.cs" />
     <Reference Include="Unity.Timeline.Editor">
       <HintPath>D:/student/Desktop/GroupGame2020/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
     </Reference>

@@ -7,16 +7,20 @@ public class Bullet : MonoBehaviour
     public float disappear;
     public string type;
     public int attack;
+    private Animator anim;
+    private Rigidbody rb;
     // Start is called before the first frame update
     void Start()
     {
         Destroy(gameObject, disappear);
+        anim = gameObject.GetComponent<Animator>();
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        //
     }
 
     private void OnTriggerEnter(Collider other)
@@ -24,7 +28,9 @@ public class Bullet : MonoBehaviour
         Health enemyHealth = other.GetComponent<Health>();
         if (enemyHealth != null && type!= enemyHealth.type)
         {
-            Destroy(gameObject);
+            anim.SetBool("Hit", true);
+            rb.isKinematic = true;
+            Destroy(gameObject,1.0f);
             enemyHealth.Damage= attack;
         }
         

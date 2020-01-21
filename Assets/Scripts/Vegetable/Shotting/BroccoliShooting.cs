@@ -16,7 +16,7 @@ public class BroccoliShooting : Shooting
         base.Update();
     }
     
-    private void OnTriggerStay(Collider other)
+    private void OnTriggerEnter(Collider other)
     {
         var temp = other.gameObject.GetComponent<Health>();
         if (temp && temp.type == "Fruit")

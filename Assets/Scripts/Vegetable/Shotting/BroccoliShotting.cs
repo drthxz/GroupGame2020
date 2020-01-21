@@ -23,7 +23,7 @@ public class BroccoliShotting : Shotting
         {
             enemy = other.gameObject;
             _shotting = true;
-            StartCoroutine(Shotting());
+            StartCoroutine(Shotting(timeBetweenBullets));
         }
     }
 
@@ -33,16 +33,16 @@ public class BroccoliShotting : Shotting
         if (temp && temp.type == "Fruit")
         {
             _shotting = false;
-            StopCoroutine(Shotting());
+            StopCoroutine(Shotting(timeBetweenBullets));
         }
     }
 
-    IEnumerator Shotting()
+    IEnumerator Shotting(float time)
     {
 
         while (_shotting)
         {
-            yield return new WaitForSeconds(2f);
+            yield return new WaitForSeconds(time);
             bulletCom.type = type;
             bulletCom.attack = attack;
             GameObject temp = Instantiate(bullet, point.transform.position, new Quaternion(0f,0f,0f,0f));

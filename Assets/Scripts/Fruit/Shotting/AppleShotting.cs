@@ -10,7 +10,7 @@ public class AppleShotting : Shotting
     protected override void Start()
     {
         base.Start();
-        StartCoroutine(Shotting());
+        StartCoroutine(Shotting(timeBetweenBullets));
         
     }
 
@@ -27,7 +27,7 @@ public class AppleShotting : Shotting
             {
                 speedup = true;
                 StopAllCoroutines();
-                StartCoroutine(Shotting(0.5f));
+                StartCoroutine(Shotting(timeBetweenBullets));
             }
         }else{
             enemy=gameObject.GetComponent<Move>().tempTarget;
@@ -55,19 +55,15 @@ public class AppleShotting : Shotting
         }
     }
 
-    IEnumerator Shotting(float speed=1.5f)
+    IEnumerator Shotting(float time)
     {
         GameObject []temp=new GameObject[cound];
         while (true)
         {
-            yield return new WaitForSeconds(speed);
+            yield return new WaitForSeconds(time);
             for(int i = 0; i < cound; i++)
             {
                 float angle = transform.eulerAngles.y + (transform.rotation.y + 5f * i) / 2;
-                if (i < 4)
-                {
-                   // angle = transform.eulerAngles.y + (transform.rotation.y - 5f * i) / 2;
-                }
                 bulletCom.type = type;
                 bulletCom.attack = attack;
                 temp[i] = Instantiate(bullet, point.transform.position, Quaternion.Euler(0, angle, 0));

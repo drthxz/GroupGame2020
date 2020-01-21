@@ -27,6 +27,11 @@ public class Move : MonoBehaviour
     public GameObject tempTarget;
     protected virtual void FindEnemy()
     {
+        enemyList.RemoveAll(item => item == null);
+        if (enemyList.Count == 0)
+        {
+            tempTarget = null;
+        }
         for (int i = 0; i < enemyList.Count; i++)
         {
             targetDistance[i] = Vector3.Distance(gameObject.transform.position, enemyList[i].gameObject.transform.position);
@@ -35,9 +40,10 @@ public class Move : MonoBehaviour
             {
                 tempTarget = enemyList[i].gameObject;
                 MoveToTarget(i);
-                enemyList.RemoveAll(item => item == null);
+                
                 if(enemyList.Count!=targetDistance.Length){
                     targetDistance = new float[enemyList.Count];
+
                 }
             }
             

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -266,6 +266,7 @@ MonoBehaviour:
   point: {fileID: 125492433}
   disappear: 5
   range: 20
+  timeBetweenBullets: 1.5
   enemy: {fileID: 0}
   type: Fruit
   cound: 6
@@ -631,6 +632,7 @@ MonoBehaviour:
   point: {fileID: 1077218108}
   disappear: 2.5
   range: 6
+  timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
 --- !u!54 &125569648
@@ -797,6 +799,7 @@ MonoBehaviour:
   point: {fileID: 164529285}
   disappear: 2.5
   range: 3
+  timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
 --- !u!54 &157666667
@@ -1146,6 +1149,7 @@ MonoBehaviour:
   point: {fileID: 1814455891}
   disappear: 2.5
   range: 10
+  timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
 --- !u!54 &176221418
@@ -2627,6 +2631,7 @@ MonoBehaviour:
   point: {fileID: 817420161}
   disappear: 2.5
   range: 8
+  timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
 --- !u!95 &597201677
@@ -4099,10 +4104,10 @@ MonoBehaviour:
   point: {fileID: 1697491340}
   disappear: 5
   range: 100
+  timeBetweenBullets: 0.5
   enemy: {fileID: 0}
   type: Fruit
   damagePerShot: 20
-  timeBetweenBullets: 0.15
   speed: 2
 --- !u!1 &1149130958
 GameObject:

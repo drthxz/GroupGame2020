@@ -3,8 +3,7 @@
 public class PlayerShooting : Shotting
 {
     public int damagePerShot = 20;
-    public float timeBetweenBullets = 0.15f;
-    float timer;
+    private float timer;
     Ray shootRay = new Ray();
     RaycastHit shootHit;
     int shootableMask;

@@ -9,6 +9,7 @@ public class Shotting : MonoBehaviour
     [SerializeField] protected GameObject point;
     [SerializeField] protected float disappear;
     [SerializeField] protected float range;
+    [SerializeField] protected float timeBetweenBullets = 0.5f;
     protected SphereCollider shottingRange;
     protected bool _shotting;
     [SerializeField] protected GameObject enemy;
@@ -28,7 +29,7 @@ public class Shotting : MonoBehaviour
     // Update is called once per frame
     protected virtual void Update()
     {
-        if (_shotting)
+        if (_shotting && enemy!=null)
         {
             transform.LookAt(enemy.transform);
             transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);

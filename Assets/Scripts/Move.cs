@@ -9,13 +9,14 @@ public class Move : MonoBehaviour
     public float speed;
     //public List<float> targetDistance=new List<float>();
     public float[] targetDistance;
+    protected Transform image;
     // Start is called before the first frame update
     protected virtual void Start()
     {
         _character = GameObject.Find("Character");
         
         targetDistance = new float[enemyList.Count];
-        
+        image=transform.GetChild(0);
     }
 
     // Update is called once per frame
@@ -55,6 +56,10 @@ public class Move : MonoBehaviour
     {
         transform.LookAt(tempTarget.transform);
         transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
+        if(image!=null){
+            image.rotation=new Quaternion(0,-180-transform.rotation.y,0,0);
+        }
+        
         if (Mathf.Min(targetDistance[index]) >= 5f)
         { 
             transform.Translate(Vector3.forward * Time.deltaTime * speed);

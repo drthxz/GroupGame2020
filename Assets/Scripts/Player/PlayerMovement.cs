@@ -6,12 +6,14 @@ public class PlayerMovement : MonoBehaviour
     public float cameraMaxDistance=100f;
     private int floormask;
     private Rigidbody playerRb;
+    private Rigidbody pointRb;
     private Vector3 movement;
     private Animator anim;
     
 
     void Awake(){
         playerRb=GetComponent<Rigidbody>();
+        pointRb=transform.GetChild(0).GetComponent<Rigidbody>();
         floormask=LayerMask.GetMask("Floor");
         anim=GetComponent<Animator>();
         
@@ -40,7 +42,9 @@ public class PlayerMovement : MonoBehaviour
         if(Physics.Raycast(cameraRay,out cameraHit,cameraMaxDistance,floormask)){
             Vector3 playerToMouse=cameraHit.point-transform.position;
             Quaternion newRotation=Quaternion.LookRotation(playerToMouse);
-            playerRb.MoveRotation(newRotation);
+            //playerRb.MoveRotation(newRotation);
+            pointRb.MoveRotation(newRotation);
+            pointRb.gameObject.transform.position=gameObject.transform.position;
             }
     }
     

@@ -1,0 +1,511 @@
+fileFormatVersion: 2
+guid: 15940960e760eea4ba5903e8ea3cf037
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 2211809631057827675
+    second: EggplantImage_0
+  - first:
+      213: -7020547244534025936
+    second: EggplantImage_1
+  - first:
+      213: -8403537231161124614
+    second: EggplantImage_2
+  - first:
+      213: -4352574681653077907
+    second: EggplantImage_3
+  - first:
+      213: -1145722006012446296
+    second: EggplantImage_4
+  - first:
+      213: -1408863303540475953
+    second: EggplantImage_5
+  - first:
+      213: 6225543670676333647
+    second: EggplantImage_6
+  - first:
+      213: -272071621754550256
+    second: EggplantImage_7
+  - first:
+      213: 6166711473896207682
+    second: EggplantImage_8
+  - first:
+      213: 4359107470174615404
+    second: EggplantImage_9
+  - first:
+      213: 6752827421116064384
+    second: EggplantImage_10
+  - first:
+      213: 8886960849577366079
+    second: EggplantImage_11
+  - first:
+      213: -2828375721004780063
+    second: EggplantImage_12
+  - first:
+      213: -8138707940512316889
+    second: EggplantImage_13
+  - first:
+      213: 5804626089412174566
+    second: EggplantImage_14
+  - first:
+      213: -4508204188914213747
+    second: EggplantImage_15
+  - first:
+      213: 4471636487419938645
+    second: EggplantImage_16
+  externalObjects: {}
+  serializedVersion: 10
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: EggplantImage_0
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 1099
+        width: 526
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 962253f2675b3704a896ad29b47d5c58
+      internalID: 2211809631057827675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_1
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 1963
+        width: 940
+        height: 424
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d725e1eccb797c47ae149ef99fc1eb3
+      internalID: -7020547244534025936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_2
+      rect:
+        serializedVersion: 2
+        x: 1109
+        y: 1099
+        width: 526
+        height: 878
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10edee82ae4a2a4d8c3611d55c4d7db
+      internalID: -8403537231161124614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_3
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 1095
+        width: 526
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b4c64d74d4fb54ab7336da2dc3011d
+      internalID: -4352574681653077907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_4
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 1095
+        width: 526
+        height: 880
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b3bf357efc501448ec89154fc914bc
+      internalID: -1145722006012446296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_5
+      rect:
+        serializedVersion: 2
+        x: 1874
+        y: 1607
+        width: 22
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7db96e1e395405d49be29cf6e533c745
+      internalID: -1408863303540475953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_6
+      rect:
+        serializedVersion: 2
+        x: 3316
+        y: 1590
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0921f5e1de25d04196003710d745866
+      internalID: 6225543670676333647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_7
+      rect:
+        serializedVersion: 2
+        x: 1860
+        y: 1473
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e847092f99faa7242a1a75d3c6ba417d
+      internalID: -272071621754550256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_8
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 1473
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e1809c0214f5ce4da500d20ea1797c1
+      internalID: 6166711473896207682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_9
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 167
+        width: 556
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4011b4ab953f584c96f009a9290bc00
+      internalID: 4359107470174615404
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_10
+      rect:
+        serializedVersion: 2
+        x: 1113
+        y: 165
+        width: 544
+        height: 879
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bb691dcf1b713c4195a13164479fcd4
+      internalID: 6752827421116064384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_11
+      rect:
+        serializedVersion: 2
+        x: 1881
+        y: 620
+        width: 24
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6c85b52dac00b1468a5d28104ccd737
+      internalID: 8886960849577366079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_12
+      rect:
+        serializedVersion: 2
+        x: 1938
+        y: 167
+        width: 558
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ade3e4f4090f174ba59c7215829bd9c
+      internalID: -2828375721004780063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_13
+      rect:
+        serializedVersion: 2
+        x: 2748
+        y: 167
+        width: 557
+        height: 877
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85af23a92bae3745a9d46be81a5accc
+      internalID: -8138707940512316889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_14
+      rect:
+        serializedVersion: 2
+        x: 3339
+        y: 620
+        width: 23
+        height: 56
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c8d31b7648de4942825866044ef0b48
+      internalID: 5804626089412174566
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_15
+      rect:
+        serializedVersion: 2
+        x: 1879
+        y: 514
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b34a05ed849ec044180c12a7f60abd55
+      internalID: -4508204188914213747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: EggplantImage_16
+      rect:
+        serializedVersion: 2
+        x: 3351
+        y: 514
+        width: 14
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b601a93a7edecec4e86d5a9614422fc0
+      internalID: 4471636487419938645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

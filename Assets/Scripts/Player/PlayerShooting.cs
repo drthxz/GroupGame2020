@@ -10,7 +10,7 @@ public class PlayerShooting : Shooting
     ParticleSystem gunParticles;
     //LineRenderer gunLine;
     AudioSource gunAudio;
-    Light gunLight;
+    //Light gunLight;
     float effectsDisplayTime = 0.2f;
     public float speed;
 
@@ -21,7 +21,7 @@ public class PlayerShooting : Shooting
         gunParticles = GetComponent<ParticleSystem> ();
         //gunLine = GetComponent <LineRenderer> ();
         gunAudio = GetComponent<AudioSource> ();
-        gunLight = GetComponent<Light> ();
+        //gunLight = GetComponent<Light> ();
         bulletCom = bullet.GetComponent<Bullet>();
         bulletCom.disappear = disappear;
     }
@@ -46,7 +46,7 @@ public class PlayerShooting : Shooting
     public void DisableEffects ()
     {
         //gunLine.enabled = false;
-        gunLight.enabled = false;
+        //gunLight.enabled = false;
     }
 
 
@@ -56,7 +56,7 @@ public class PlayerShooting : Shooting
 
         //gunAudio.Play ();
 
-        gunLight.enabled = true;
+        //gunLight.enabled = true;
 
         //gunParticles.Stop ();
         //gunParticles.Play ();

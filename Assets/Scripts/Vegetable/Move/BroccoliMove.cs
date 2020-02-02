@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class BroccoliMove : Move
 {
-
+    private new Transform[] broccooliImage=new Transform[4];
+    public new Transform[] pointRotation=new Transform[4];
     // Start is called before the first frame update
     protected override void Start()
     {
@@ -17,6 +18,13 @@ public class BroccoliMove : Move
             }
         }
         targetDistance=new float[enemyList.Count];
+
+        for(int i=0;i<4;i++)
+        {
+            broccooliImage[i]=transform.GetChild(i);
+            pointRotation[i]=transform.GetChild(i).transform.GetChild(1);
+        }
+        
     }
     // Update is called once per frame
     protected override void Update()
@@ -33,5 +41,14 @@ public class BroccoliMove : Move
 
     protected override void MoveToTarget(int index){
         base.MoveToTarget(index);
+        
+        for(int i=0;i<4;i++)
+        {
+            if(broccooliImage[i]!=null){
+                broccooliImage[i].rotation=Quaternion.Euler (new Vector3(0, -180-transform.rotation.y, 0));//Quaternion.Euler(0, -180-transform.rotation.y, 0);
+                pointRotation[i].localRotation = Quaternion.Euler (0,-transform.rotation.eulerAngles.y,0);//transform.rotation;
+            }
+            
+        }
     }
 }

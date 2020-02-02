@@ -15,6 +15,7 @@ public class Shooting : MonoBehaviour
     [SerializeField] protected GameObject enemy;
     public string type;
     protected Bullet bulletCom;
+
     // Start is called before the first frame update
     protected virtual void Start()
     {
@@ -24,6 +25,7 @@ public class Shooting : MonoBehaviour
         shootingRange.radius = range*10;
         shootingRange.isTrigger = true;
         bulletCom.disappear = disappear;
+        
     }
 
     // Update is called once per frame
@@ -31,8 +33,8 @@ public class Shooting : MonoBehaviour
     {
         if (_shooting && enemy!=null)
         {
-            transform.LookAt(enemy.transform);
-            transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
+            //transform.LookAt(enemy.transform);
+            //transform.rotation = Quaternion.Euler(0, transform.eulerAngles.y, 0);
         }
         if (!_shooting)
         {

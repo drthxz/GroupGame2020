@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 170076734}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -571,7 +571,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 125569644}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.2, y: 1.0699999, z: -3.5}
+  m_LocalPosition: {x: 3.97, y: 1.0699999, z: -5.13}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 398913183}
@@ -619,6 +619,11 @@ MonoBehaviour:
   timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
+  pointRotation:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!54 &125569648
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -772,7 +777,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 157666663}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7, y: 1.0699999, z: -5.6}
+  m_LocalPosition: {x: 1.7, y: 1.0699999, z: -8.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1933104846}
@@ -820,6 +825,11 @@ MonoBehaviour:
   timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
+  pointRotation:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!54 &157666667
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1027,7 +1037,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 176221414}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.9, y: 1.0699999, z: -3.5}
+  m_LocalPosition: {x: -1.36, y: 1.0699999, z: -6.27}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 133028561}
@@ -1075,6 +1085,11 @@ MonoBehaviour:
   timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
+  pointRotation:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!54 &176221418
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1436,7 +1451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -287, y: 199}
+  m_AnchoredPosition: {x: -287, y: 262.8}
   m_SizeDelta: {x: 236.6, y: 25.8}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &286236359
@@ -2532,7 +2547,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 597201669}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.5, y: 1.07, z: -1.51}
+  m_LocalPosition: {x: 3.19, y: 1.07, z: -1.75}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 692502789}
@@ -2591,6 +2606,11 @@ MonoBehaviour:
   timeBetweenBullets: 2
   enemy: {fileID: 0}
   type: Vegetable
+  pointRotation:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
 --- !u!95 &597201677
 Animator:
   serializedVersion: 3
@@ -5744,11 +5764,6 @@ MonoBehaviour:
   speed: 2
   targetDistance: []
   tempTarget: {fileID: 0}
-  pointRotation:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
 --- !u!1 &2082032664
 GameObject:
   m_ObjectHideFlags: 0
@@ -5966,7 +5981,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2118268587}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 25.3, y: 3.05, z: -17.47}
+  m_LocalPosition: {x: -27.32, y: 3.05, z: -17.47}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 1697491341}

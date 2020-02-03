@@ -110,8 +110,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   disappear: 5
-  type: Fruit
-  attack: 30
+  type: Vegetable
+  attack: 10
 --- !u!54 &1448382598609443241
 Rigidbody:
   m_ObjectHideFlags: 0

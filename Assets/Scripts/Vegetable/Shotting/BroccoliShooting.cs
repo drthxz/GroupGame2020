@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class BroccoliShooting : Shooting
 {
+    public new Transform[] pointRotation = new Transform[4];
     // Start is called before the first frame update
     protected override void Start()
     {
         base.Start();
+        for (int i = 0; i < 4; i++)
+        {
+            pointRotation[i] = transform.GetChild(1);
+        }
     }
 
     // Update is called once per frame
@@ -47,6 +52,13 @@ public class BroccoliShooting : Shooting
             bulletCom.attack = attack;
             GameObject temp = Instantiate(bullet, point.transform.position, new Quaternion(0f,0f,0f,0f));
             temp.GetComponent<Rigidbody>().velocity = (point.transform.forward * 10f);
+            for (int i = 0; i < 4; i++)
+            {
+                if (pointRotation[i] != null)
+                {
+                    pointRotation[i].localRotation = Quaternion.Euler (0, 180 - transform.parent.rotation.eulerAngles.y, 0);//transform.rotation;
+                }
+            }
         }
     }
 }
